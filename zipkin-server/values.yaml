@@ -41,7 +41,7 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: 32010
+  port: 9411
 
 ingress:
   enabled: false
