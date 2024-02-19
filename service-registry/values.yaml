@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: amanravi12/oauth2-server
+  repository: amanravi12/service-registry
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: 1
