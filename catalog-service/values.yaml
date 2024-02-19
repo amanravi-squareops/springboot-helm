@@ -8,7 +8,7 @@ image:
   repository: amanravi12/catalog-service
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 1
+  tag: build-2-Feb-19-t-10-10
 
 imagePullSecrets: []
 nameOverride: ""
