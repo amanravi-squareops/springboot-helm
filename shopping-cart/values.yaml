@@ -8,7 +8,7 @@ image:
   repository: amanravi12/shoppingcart-ui
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 3
+  tag: build-2-Feb-19-t-07-00
 
 imagePullSecrets: []
 nameOverride: ""
