@@ -44,7 +44,7 @@ service:
   port: 8761
 
 ingress:
-  enabled: false
+  enabled: enable
   className: ""
   annotations: {}
     # kubernetes.io/ingress.class: nginx
