@@ -8,7 +8,7 @@ image:
   repository: amanravi12/hystrix-dashboard
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: build-7-Feb-19-t-08-46
+  tag: build-1-Feb-21-t-06-41
 
 imagePullSecrets: []
 nameOverride: ""
