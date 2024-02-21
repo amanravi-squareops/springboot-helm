@@ -74,11 +74,11 @@ resources: {}
 
 livenessProbe:
   httpGet:
-    path: /
+    path: /config-repo
     port: http
 readinessProbe:
   httpGet:
-    path: /
+    path: /config-repo
     port: http
 
 autoscaling:
