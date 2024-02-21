@@ -50,7 +50,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: "a26091e007e1e4e9f9343fe55f835248-83117acb34785507.elb.us-east-1.amazonaws.com"
+    - host: "aae282ebe075142308fb8830b151ded2-23e3e0725425be8b.elb.us-east-1.amazonaws.com"
       paths:
         - path: /ui
           pathType: Prefix
