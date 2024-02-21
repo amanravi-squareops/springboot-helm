@@ -42,7 +42,7 @@ securityContext: {}
 service:
   name: "config-server" 
   type: ClusterIP
-  port: 80
+  port: 8888
 
 ingress:
   enabled: true
