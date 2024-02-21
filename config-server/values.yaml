@@ -40,7 +40,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  name: "config-server-svc" 
+  name: "config-server" 
   type: ClusterIP
   port: 80
 
