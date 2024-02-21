@@ -8,7 +8,7 @@ image:
   repository: amanravi12/zipkin-server
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: build-13-Feb-19-t-06-41
+  tag: build-1-Feb-21-t-06-41
 
 imagePullSecrets: []
 nameOverride: ""
