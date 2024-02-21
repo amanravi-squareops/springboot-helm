@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: amanravi12/rabbitmq
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "v1"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -41,19 +41,19 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  port: 15672
 
 ingress:
-  enabled: false
-  className: ""
+  enabled: true
+  className: "nginx"
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: chart-example.local
+    - host: "aae282ebe075142308fb8830b151ded2-23e3e0725425be8b.elb.us-east-1.amazonaws.com"
       paths:
-        - path: /
-          pathType: ImplementationSpecific
+        - path: /rabbitmq
+          pathType: Prefix
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
@@ -73,11 +73,11 @@ resources: {}
 
 livenessProbe:
   httpGet:
-    path: /
+    path: /rabbitmq
     port: http
 readinessProbe:
   httpGet:
-    path: /
+    path: /rabbitmq
     port: http
 
 autoscaling:
