@@ -41,7 +41,7 @@ securityContext: {}
 
 service:
   name: catalog-service
-  type: LoadBalancer
+  type: ClusterIP
   port: 18181
 
 ingress:
