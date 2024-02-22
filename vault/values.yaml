@@ -94,9 +94,7 @@ volumes: []
 #   secret:
 #     secretName: mysecret
 #     optional: false
-env:
-   VAULT_ADDR: 'http://vault.jenkins.svc:8200'
-   CONFIG_DIR: '/config'
+
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts: []
 # - name: foo
