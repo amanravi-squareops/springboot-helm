@@ -99,6 +99,9 @@ volumeMounts: []
 # - name: foo
 #   mountPath: "/etc/foo"
 #   readOnly: true
+env:
+   VAULT_ADDR: 'http://vault.jenkins.svc:8200'
+   CONFIG_DIR: '/config'
 
 nodeSelector: {}
 
