@@ -40,13 +40,13 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  name: "hystrix-hystrix-dashboard"
+  name: "hystrix"
   type: ClusterIP
   port: 8788
 
 ingress:
   enabled: true
-  className: "nignx"
+  className: "nginx"
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
