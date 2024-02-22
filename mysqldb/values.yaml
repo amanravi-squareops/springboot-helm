@@ -94,7 +94,8 @@ volumes: []
 #     secretName: mysecret
 #     optional: false
 env:
-  password: "1230"
+  user: "root"
+  password: "admin"
   database: "catalog"
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts: []
