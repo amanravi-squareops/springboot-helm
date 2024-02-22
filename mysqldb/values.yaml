@@ -40,7 +40,6 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  name: "mysql-mysqldb"
   type: ClusterIP
   port: 3306
 
