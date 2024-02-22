@@ -41,7 +41,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 5672
+  port: 15672
 
 ingress:
   enabled: true
