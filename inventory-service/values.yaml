@@ -40,8 +40,9 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
+  name: inventory
   type: ClusterIP
-  port: 80
+  port: 18282
 
 ingress:
   enabled: false
