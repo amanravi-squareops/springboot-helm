@@ -37,11 +37,6 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: ["./vault-init.sh"]
-          env:
-            - name: VAULT_ADDR
-              value: {{ .Values.env.VAULT_ADDR }}
-            - name: CONFIG_DIR
-              value: {{ .Values.env.CONFIG_DIR }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
