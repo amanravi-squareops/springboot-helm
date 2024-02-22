@@ -46,12 +46,12 @@ service:
 
 ingress:
   enabled: false
-  className: ""
+  className: "nginx"
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: 
+    - host: "a537f1b49392f425e92a1eeb88f4f502-ab8ccdf898e1f936.elb.us-east-1.amazonaws.com"
       paths:
         - path: /
           pathType: Prefix
