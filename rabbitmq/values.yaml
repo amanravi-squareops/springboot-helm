@@ -52,7 +52,7 @@ ingress:
   hosts:
     - host: "a537f1b49392f425e92a1eeb88f4f502-ab8ccdf898e1f936.elb.us-east-1.amazonaws.com"
       paths:
-        - path: /
+        - path: /rabbitmq
           pathType: Prefix
   tls: []
   #  - secretName: chart-example-tls
